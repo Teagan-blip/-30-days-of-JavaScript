@@ -1,0 +1,7 @@
+
+#innermorndiv {
+    background: linear-gradient(red, orange, pink, purple);
+    padding: 2rem;
+    margin: 2rem;
+    border: dotted 8px yellow;
+}
