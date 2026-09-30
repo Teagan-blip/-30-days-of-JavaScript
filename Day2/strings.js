@@ -41,3 +41,38 @@ console.log(`${a} is greater than ${b}: ${a > b}`);  // 2 is greater than 3: fal
 console.log(firstName.toUpperCase());  // ANNA
 console.log(firstName.toLowerCase());  // anna
 
+// reassigned firstname. So didn't need let again
+firstName = "Teagan";
+lastName = "Murray";
+
+
+console.log(`Signed: ${firstName[0]}.${lastName[0]}`);
+
+// .substring lets you do more than one
+// two arguments: the startign index and the stopping index
+console.log(firstName.substring(0, 3));  // Tea
+console.log(firstName.substring(3, 7));  //gan
+
+// .substr lets you slice a section
+// takes two arguemtns: the startign index and the number of character to slice
+console.log(firstName.substr(0, 3));  //Tea
+console.log(firstName.substr(3, 3));  //gan
+
+
+// trim()  Removes trailing space in the beginning or the end of a string.
+let string = '   30 Days Of JavaScript   '
+
+console.log(string)  //    30 Days Of JavaScript
+console.log(string.trim(' '))  //30 Days Of JavaScript
+
+//  includes(): checks if substring argument exists in the string.
+console.log(string.includes('Days'))     // true
+console.log(string.includes('days'))     // false - it is case sensitive!
+console.log(string.includes('Script'))   // true
+
+//replace  - replaces old substring with a new substring
+console.log(string.replace('JavaScript', 'Python')) // 30 Days Of Python
+
+
+
+//
